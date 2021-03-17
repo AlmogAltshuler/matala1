@@ -1,6 +1,6 @@
 def factorial(n):
     f=1
-    if n==0:
+    if n==0:  
         return 1
     elif n>0:
         for k in range(1,n+1):
@@ -37,7 +37,7 @@ def Ln(x):
              y_n_1=y_n+2*((x-exponent(y_n))/(x+exponent(y_n)))
          return y_n_1  
  
-def xtimesy(num,power): 
+def XtimesY(num,power): 
     if num<0:
         return 0.0
     else:
@@ -57,7 +57,7 @@ def calculate(num3):
         result=0.0
         return result
     else:
-        result=exponent(num3)*xtimesy(7,num3)*sqrt(num3,num3)*xtimesy(num3,-1)
+        result=exponent(num3)*xtimesy(7,num3)*sqrt(num3,num3)*XtimesY(num3,-1)
         result=float('%0.6f' % result)
         return result
 
